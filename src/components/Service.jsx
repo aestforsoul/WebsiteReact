@@ -12,12 +12,22 @@ const Container = styled.div`
 const MainTitle = styled.p`
     font-size: 54px;  
     margin-top: 60px;
+
+    @media only screen and (max-width: 480px) {
+    margin-top: 0;
+    font-size: 20px;
+  }
 `;
 
 const CardContainer = styled.div`
   display: flex;  
   justify-content: space-between;
   margin-top: 30px;
+
+  @media only screen and (max-width: 480px) {
+    flex-direction: column;
+    margin-top: 20px;
+  }
 `;
 
 const Service = () => {

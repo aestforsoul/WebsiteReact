@@ -11,6 +11,10 @@ const Wrapper = styled.div`
     padding: 20px;
     display: flex;
     justify-content: space-between;
+
+    @media only screen and (max-width: 480px) {
+    padding: 10px;
+  }
 `;
 
 const List = styled.div`
@@ -22,6 +26,10 @@ const List = styled.div`
 
 const ListItem = styled.div`
     margin-right: 40px;
+
+    @media only screen and (max-width: 480px) {
+    margin-right: 10px;
+  }
 `;
 
 const Copyright = styled.div`

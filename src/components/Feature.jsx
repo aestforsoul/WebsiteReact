@@ -5,6 +5,10 @@ import Cake from '../img/weddingcake.jpg'
 const Container = styled.div`
     display: flex;
     padding: 0 20px;
+
+    @media only screen and (max-width: 480px) {
+    flex-direction: column;
+  }
 `;
 
 const Right = styled.div`
@@ -13,6 +17,10 @@ const Right = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @media only screen and (max-width: 480px) {
+    width: 100%;
+  }
 `;
 
 const Image = styled.img`
@@ -24,6 +32,11 @@ const Image = styled.img`
 const Title = styled.span`
     font-size: 70px;
     width: 60%;
+
+    @media only screen and (max-width: 480px) {
+    width: 100%;
+    font-size: 50px;
+  }
 `;
 
 const SubTitle = styled.span`
@@ -31,16 +44,29 @@ const SubTitle = styled.span`
     font-style: italic;
     margin-top: 30px;
     width: 60%;
+
+    @media only screen and (max-width: 480px) {
+    width: 100%;
+  }
 `;
 
 const Desc = styled.p`
     font-size: 20px;
     margin-top: 30px;
     width: 60%;
+
+    @media only screen and (max-width: 480px) {
+    width: 100%;
+    margin-top: 35px;
+  }
 `;
 
 const Left = styled.div`
       width: 40%;
+
+     @media only screen and (max-width: 480px) {
+      display: none;
+  }
 `;
 
 const Feature = () => {
